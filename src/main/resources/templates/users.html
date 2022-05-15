@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 
     <title>Users</title>
 </head>
 <body>
-<h2 align="center">  Пользователи</h2>
+<h2 align="center"> Пользователи</h2>
 <table border="1" width="100%">
     <tr>
         <th bgcolor="#7fff00">ID</th>
@@ -25,10 +25,10 @@
         <td bgcolor="#ffe4c4" th:text="${user.getAge()}"></td>
         <td bgcolor="#ffe4c4" th:text="${user.getProfession()}"></td>
 
-    <td bgcolor="#ffe4c4">
-        <a th:href="@{'/change/' + ${user.getId()}}">change &nbsp</a>
-        <a th:href="@{'/delete/' + ${user.getId()}}">delete</a>
-    </td>
+        <td bgcolor="#ffe4c4">
+            <a th:href="@{'/change/' + ${user.getId()}}">change &nbsp</a>
+            <a th:href="@{'/delete/' + ${user.getId()}}">delete</a>
+        </td>
     </tr>
 
 </table>
